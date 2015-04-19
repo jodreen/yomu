@@ -1,24 +1,16 @@
-<!DOCTYPE html>
+{% extends "base.html" %}
 
-<html lang="en">
+{% block title %}Home Title{% endblock %}
 
-<head>
-    <meta charset="utf-8" />
-    <link rel="stylesheet" href="css/style.css">
-    <link href="images/favicon.ico" rel="shortcut icon">
 
-</head>
+{% block nav-about %}<strong class="nav-active">Profile</strong>{% endblock %}
 
-<body>
+{% block header %}Home Header{% endblock %}
 
+{% block content%}
 <div class="container">
     <h1>First Blog</h1>
     <h2>{{ title }}</h2>
     <h3>Posted on {{ date }} by {{ author }}</h3>
     <p>{{ body }}</p>
-
-</div>
-
-</body>
-
-</html>
+{% endblock %}
