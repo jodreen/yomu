@@ -36,3 +36,4 @@ data = {'name': 'to-read', 'book_id': 631932}
 # add this to our "to-read" shelf
 response = session.post('http://www.goodreads.com/shelf/add_to_shelf.xml', data)
 
+print response
