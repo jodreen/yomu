@@ -10,16 +10,16 @@
 
 </head>
 
-{% url home_url_name as home %}
-{% url mybooks_url_name as mybooks %}
-{% url profile_url_name as profile %}
+{% url "home_url_name" as home %}
+{% url "mybooks_url_name" as mybooks %}
+{% url "profile_url_name" as profile %}
 
 <body>
     {% block nav %}
     <ul id="nav">
-        <li>{% block nav-home %}<a href="home">Home</a>{% endblock %}</li>
-        <li>{% block nav-mybooks %}<a href="mybooks">My Books</a>{% endblock %}</li>
-        <li>{% block nav-profile %}<a href="profile">Profile</a>{% endblock %}</li>
+        <li>{% block nav-home %}<a href={{ home }}>Home</a>{% endblock %}</li>
+        <li>{% block nav-mybooks %}<a href={{ mybooks }}>My Books</a>{% endblock %}</li>
+        <li>{% block nav-profile %}<a href={{ profile }}>Profile</a>{% endblock %}</li>
     </ul>
     {% endblock %}
 
