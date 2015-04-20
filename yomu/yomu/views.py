@@ -18,13 +18,13 @@ def mybooks(request):
     'date' : '18th September 2011',
     'body' : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam cursus tempus dui, ut vulputate nisl eleifend eget. Aenean justo felis, dapibus quis vulputate at, porta et dolor. Praesent enim libero, malesuada nec vestibulum vitae, fermentum nec ligula. Etiam eget convallis turpis. Donec non sem justo.',
     }
-    return render(request, 'index.html', content)
+    return render(request, 'mybooks.html', content)
 
 def profile(request):
     content = {
-    'title' : 'My First Post',
+    'title' : 'My Profile Post',
     'author' : 'Giles',
     'date' : '18th September 2011',
     'body' : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam cursus tempus dui, ut vulputate nisl eleifend eget. Aenean justo felis, dapibus quis vulputate at, porta et dolor. Praesent enim libero, malesuada nec vestibulum vitae, fermentum nec ligula. Etiam eget convallis turpis. Donec non sem justo.',
     }
-    return render(request, 'index.html', content)
+    return render(request, 'profile.html', content)
